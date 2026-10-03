@@ -107,7 +107,7 @@ function norm(){
   if(S.cats){S.cats=arr(S.cats).map(arr);S.cats.sort((a,b)=>{const x=ORD.indexOf(a[0]),y=ORD.indexOf(b[0]);return (x<0?9:x)-(y<0?9:y)})}
   if(!cats().some(c=>c[0]===ui.cat))ui.cat=cats()[0]?cats()[0][0]:"";
 }
-const DB_URL="";
+const DB_URL="https://shamamsa-ava-mina-default-rtdb.europe-west1.firebasedatabase.app";
 const api=p=>DB_URL.replace(/\/$/,"")+"/"+p+".json";
 let dirty=0;
 function persist(){
